@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"> MyHotel</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Rooms</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    <li class="nav-item">
+                        <a data-bs-toggle="modal" data-bs-target="#register" class="btn btn-primary ms-5" aria-current="page" href="#"> Register </a>
+                      </li>
+                    <li class="nav-item">
+                        <a data-bs-toggle="modal" data-bs-target="#login" class="btn btn-primary ms-4" aria-current="page" href="#">Login </a>
+                      </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+ <!--login modal-->
+      <div class="modal fade" id="login">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content modal">
+            <div class="modal-header bg-primary-subtle">
+              <h5 class="modal-title text-center">Login </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <label class="form-label">Enter your E-mail:</label>
+                  <input type="email" class="form-control">
+                 
+                    <label class="form-label">Enter password:</label>
+                      <input type="password" class="form-control">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Login</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--login modal end-->
+
+    
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="container text-center">
+            <img src="img/bg.png" alt="">
+            <h1>Welcome to MyHotel</h1>
+            <p>Experience Luxury & Comfort</p>
+            <a href="#" class="btn btn-light btn-lg">Book Your Stay</a>
+        </div>
+    </header>
+
+
+    <!-- Featured Rooms -->
+    <section class="featured-rooms py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Featured Rooms</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/Deluxe.png" class="card-img-top" alt="Room 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Deluxe Room</h5>
+                            <p class="card-text">$150 / Night</p>
+                            <a href="#" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="" class="card-img-top" alt="Room 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Luxury Suite</h5>
+                            <p class="card-text">$250 / Night</p>
+                            <a href="#" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="" class="card-img-top" alt="Room 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Family Room</h5>
+                            <p class="card-text">$200 / Night</p>
+                            <a href="#" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section class="booking-form py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 mx-auto">
+                    <form class="row g-3">
+                        <div class="col-md-3">
+                            <label class="form-label">Check-in Date</label>
+                            <input type="date" class="form-control">
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label">Check-out Date</label>
+                            <input type="date" class="form-control">
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label">Guests</label>
+                            <select class="form-control">
+                                <option>1 Adult</option>
+                                <option>2 Adults</option>
+                                <option>Family</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3 d-flex align-items-end">
+                            <button type="submit" class="btn btn-primary w-100">Search</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Testimonials -->
+
+    <section class="reviews py-5">
+        <div class="container">
+            <h2 class="text-center">What Our Guests Say</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        
+                        <div class="card-body">
+                            <p>"An amazing experience! The best hotel stay ever." - Moumita Prasad</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        
+                        <div class="card-body">
+                            <p>"Absolutely loved my stay at MyHotel! The rooms were spotless, and the staff was incredibly welcoming. Will definitely book again!" – - Suman Gupta</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        
+                        <div class="card-body">
+                            <p>"The view from my room was breathtaking. Great service and comfortable stay!" – - Shubham Vishwakarma</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        
+                        <div class="card-body">
+                            <p>"Exceptional hospitality! From check-in to check-out, everything was seamless." – - Alok Singh</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 MyHotel. All Rights Reserved.</p>
+    </footer>
+
+   
+</body>
+</html>
