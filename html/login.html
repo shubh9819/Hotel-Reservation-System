@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login | CozyHaven</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: #f8f9fa;
+    }
+    .login-container {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 30px;
+    }
+    .login-card {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+    .login-card .form-control {
+      border-radius: 10px;
+    }
+    .logo-img {
+      max-height: 80px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <div class="card login-card p-4">
+      <div class="text-center mb-4">
+        <img src="img/logo.png" alt="CozyHaven Logo" class="logo-img mb-2">
+        <h4 class="fw-bold">Login to CozyHaven</h4>
+      </div>
+      <form action="login-process.php" method="post">
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control" id="password" name="password" placeholder="••••••••" required>
+        </div>
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <div>
+            <input type="checkbox" id="remember" class="form-check-input">
+            <label for="remember" class="form-check-label">Remember me</label>
+          </div>
+          <a href="#" class="text-decoration-none">Forgot password?</a>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Login</button>
+        <p class="text-center mt-3 mb-0">Don't have an account?
+          <a href="register.html" class="text-decoration-none">Register here</a>
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

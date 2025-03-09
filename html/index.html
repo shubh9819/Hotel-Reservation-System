@@ -13,24 +13,29 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="bg-dark text-center py-3 logo">
+        <img src="img/logo.png" alt="Logo" class="img-fluid">
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-1">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"> MyHotel</a>
+            
+            <a class="navbar-brand" href="#"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Rooms</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     <li class="nav-item">
-                        <a data-bs-toggle="modal" data-bs-target="#register" class="btn btn-primary ms-5" aria-current="page" href="#"> Register </a>
+                        <a data-bs-toggle="modal" data-bs-target="#register" class="btn btn-primary ms-5" aria-current="page" href="register.html"> Register </a>
                       </li>
                     <li class="nav-item">
-                        <a data-bs-toggle="modal" data-bs-target="#login" class="btn btn-primary ms-4" aria-current="page" href="#">Login </a>
+                        <a data-bs-toggle="modal" data-bs-target="#login" class="btn btn-primary ms-4" aria-current="page" href="login.html">Login </a>
                       </li>
 
                 </ul>
@@ -38,7 +43,7 @@
         </div>
     </nav>
 
- <!--login modal-->
+ <!--login modal
       <div class="modal fade" id="login">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content modal">
@@ -60,15 +65,15 @@
           </div>
         </div>
       </div>
-      <!--login modal end-->
+      login modal end-->
 
     
     <!-- Hero Section -->
     <header class="hero-section">
         <div class="container text-center">
-            <img src="img/bg.png" alt="">
-            <h1>Welcome to MyHotel</h1>
-            <p>Experience Luxury & Comfort</p>
+            
+            <h1>Make Your Stay Memorable at <b class="logo_name"> CozyHaven</b></h1>
+            <p class="para fs-5">Experience Luxury & Comfort</p>
             <a href="#" class="btn btn-light btn-lg">Book Your Stay</a>
         </div>
     </header>
@@ -91,7 +96,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="" class="card-img-top" alt="Room 2">
+                        <img src="img/lux.png" class="card-img-top" alt="Room 2">
                         <div class="card-body">
                             <h5 class="card-title">Luxury Suite</h5>
                             <p class="card-text">$250 / Night</p>
@@ -101,7 +106,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="" class="card-img-top" alt="Room 3">
+                        <img src="img/family1.png" class="card-img-top" alt="Room 3">
                         <div class="card-body">
                             <h5 class="card-title">Family Room</h5>
                             <p class="card-text">$200 / Night</p>
