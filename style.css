@@ -1,0 +1,55 @@
+/* Custom Styles */
+body {
+    padding-top: 70px; /* To prevent navbar from overlapping content */
+}
+.logo{
+    margin-top: -100px;
+    height: 100px;
+}
+.img-fluid{
+    height: 110px;
+    width: 200px;   
+     
+    
+}
+/* Hero Section */
+.hero-section {
+    margin-top: 0;
+    padding-top: 0;
+    background: url('img/bg1.png') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.logo_name{
+    font-family:'Courier New', Courier, monospace;
+    font-weight:bolder;
+}
+.hero-section h1 {
+    font-family:'Courier New', Courier, monospace;
+    font-size:40px;
+    font-weight: bold;
+    
+}
+@media (max-width: 767.98px) {
+    .hero-section {
+      margin-top: -50px;
+      text-align: center !important;
+    }
+    .hero-section h1{
+        margin-top: -50px;
+    }
+}
+
+.booking-form {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.reviews {
+    background: #f1f1f1;
+    padding: 50px 0;
+}
